@@ -1,0 +1,504 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+/* header section */
+.header {
+  height: 100px;
+  width: 100%;
+  background-color: rgb(108, 169, 248);
+  position: fixed;
+  z-index: 1
+}
+.logo {
+  float: left;
+  position: relative;
+  left: 12px;
+  top: 10px;
+  cursor: pointer;
+}
+.name a i {
+  color: darkslategray;
+  float: left;
+  position: relative;
+  top: 33px;
+  right: -31px;
+  font-size: 31px;
+  transition: .5s;
+}
+.name a i:hover {
+  color: rgb(197, 33, 21);
+  font-style: oblique;
+  transform: translateY(2px);
+}
+.navbar {
+  float: left;
+}
+.navbar ul {
+  position: relative;
+  left: 420px;
+  top: 40px;
+}
+.navbar ul li {
+  display: inline-block;
+}
+.navbar ul li a {
+  text-decoration: none;
+  padding: 20px;
+  font-size: 22px;
+  color: darkslategray;
+  transition: 0.5s;
+}
+.navbar ul li a:hover {
+  color: rgb(197, 33, 21);
+  font-size: 22.9px;
+  background-color: rgb(84, 145, 224);
+}
+.img1 {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  transition: 0.6s;
+}
+.img1:hover {
+  height: 85px;
+  width: 80px;
+  border-radius: 45%;
+  box-sizing: border-box;
+}
+/* banner section */
+.banner{
+  background-image: url(./photo/80466049_1207472269641087_8253923134177017856_n.jpg);
+  background-repeat: no-repeat;
+  background: cover;
+  height: 80vh;
+  width: 100%;
+  opacity:0.9 ;
+}
+.box1{
+  width: 30%;
+  height: 40vh;
+  position: relative;
+  top: 266px;
+  left: 50px;
+  cursor: pointer;
+}
+.hello{
+  color: aquamarine;
+  font-size: 54px;
+  
+}
+.subtitle{
+  color: aquamarine;
+  font-size: 30px;
+
+}
+.magic{
+ 
+  color: aquamarine;
+  font-size: 30px;
+  
+}
+
+.magic-item{
+  color: aquamarine;
+  font-size: 20px;
+  position:absolute;
+  top: 0px;
+  right: 0px;
+  width: 0;
+  height: 0;
+  text-align: center;
+  transition: .7s;
+  visibility: hidden;
+  opacity: 0;
+
+}
+.box1:hover > .magic-item{
+  width: 100%;
+  height: 40vh;
+  opacity: 1;
+  visibility: visible;
+}
+/* Service section */
+.services{
+  background-color: rgba(164, 255, 225, 0.986);
+}
+.services .heading1{
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(135, 27, 223);
+}
+.services .knowledge{
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+  margin-top: 10px;
+  margin-left: 80px;
+  padding: 3rem;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+.services .knowledge .html{
+  width: 25%;
+  background-color: rgba(189, 178, 178, .486);
+  border-radius: 10%;
+  padding: 2rem;
+  transition: .8s;
+  cursor: pointer;
+}
+.services .knowledge .html:hover{
+  color: blue; 
+  border-radius: 50%;
+}
+.services .knowledge .html .heading2{
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+.services .knowledge .html .html-description{
+  font-size: 1.2em;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 2px;
+  color: rgba(63, 53, 53, 0.932)
+}
+.services .knowledge .css{
+  width: 25%;
+  background-color: rgba(189, 178, 178, .486);
+  border-radius: 10%;
+  padding: 2rem;
+  transition: .8s;
+  cursor: pointer;
+}
+.services .knowledge .css:hover{
+  color: blue; 
+  border-radius: 50%;
+}
+.services .knowledge .css .heading3{
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+.services .knowledge .css .css-description{
+  font-size: 1.2em;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 2px;
+  color: rgba(63, 53, 53, 0.932)
+}
+.services .knowledge .Bootstrap{
+  width: 25%;
+  background-color: rgba(189, 178, 178, .486);
+  border-radius: 10%;
+  padding: 2rem;
+  transition: .8s;
+  cursor: pointer;
+}
+.services .knowledge .Bootstrap:hover{
+  color: blue; 
+  border-radius: 50%;
+}
+.services .knowledge .Bootstrap .heading4{
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+.services .knowledge .Bootstrap .bootstrap-description{
+  font-size: 1.2em;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 2px;
+  color: rgba(63, 53, 53, 0.932)
+}
+/* About section */
+.about{
+  display: flex;
+  flex-direction: row;
+  height: 45vh;
+  background-color: rgb(59, 206, 96);
+  gap: 5em;
+  justify-content: center;
+}
+.about .detail{
+  box-sizing: border-box;
+  margin-top: 1em;
+  border-radius: 1em;
+  width: 25%;
+  height: 40vh;
+  margin-left: 5vw;
+  font-size: 1.2em;
+  padding: 2rem;
+  cursor: pointer;
+  transition: .8s;
+  /* transition-delay: .4s; */
+  background-color:rgba(189, 178, 178, .486);
+  color: rgba(63, 53, 53, 0.932)
+  
+}
+.about .detail:hover{
+  border-radius: 1.2em;
+  transform: skew(11deg,7deg);
+}
+.about .img2{
+  width: 25%;
+  height: 40vh;
+  box-sizing: border-box;
+  margin-top: 1em;
+  cursor: pointer;
+}
+.about .img2 img{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  transition: .6s ease-in-out;
+  /* transition-delay: .4s; */
+}
+.about .img2 img:hover{
+  border-radius: 33%;
+  transform: rotate(-15deg);
+}
+.about .skills{
+  width: 25%;
+  height: 40vh;
+  box-sizing: border-box;
+  margin-top: 1em;
+  transition: .8s;
+  /* transition-delay: .4s; */
+  border-radius: 1em;
+  cursor: pointer;
+  background-color:rgba(189, 178, 178, .486);
+  color: rgba(63, 53, 53, 0.932)
+  
+
+}
+.about .skills:hover{
+  border-radius: 10%;
+  transform: scale(1.1);
+}
+.about .skills .skill-li {
+  list-style: none;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  margin: 2rem;
+}
+/* project section */
+.projects{
+  background-image: url(./photo/wepik-2021119-13451.png);
+  background-repeat: no-repeat;
+  background: cover;
+  background-position: auto;
+  opacity: .8;
+  height: 90vh;
+  width: 100%
+  
+  
+}
+.projects .github-icon a{
+  color: darkslategrey;
+  font-size: 7rem;
+  position: relative;
+  top: 10rem;
+  left: 73rem;
+  transition: .5s ease-in-out;
+  
+}
+.projects .github-icon a:active{
+  color: rgb(204, 53, 53);
+}
+.projects .github-icon a:hover{
+  color: black;
+}
+.projects .text1{
+  height: 0vh;
+  width: 0%;
+  color: aquamarine;
+  font-size: 3em;
+  font-style: oblique;
+  cursor: pointer;
+  position: relative;
+  top: 10rem;
+  left: 3rem;
+  transition: 1.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+.projects:hover > .text1{
+  height: 30vh;
+  width: 40%;
+  color: aquamarine;
+  font-size: 3em;
+  font-style: oblique;
+  cursor: pointer;
+  position: relative;
+  top: 10rem;
+  left: 3rem;
+  visibility: visible;
+  opacity: 1;
+}
+/* contact me */
+.contact-me{
+  background-color: rgba(164, 255, 225, 0.986);
+}
+.contact-me .heading5{
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(135, 27, 223);
+}
+.contact-me .mainbox{
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    padding: 3rem;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.contact-me .mainbox .box2{
+  width: 25%;
+  background-color: rgba(189, 178, 178, .486);
+  border-radius: 10%;
+  padding: 2rem;
+  cursor: pointer;
+  transform: rotate(-360deg);
+  transition: 1s;
+}
+.contact-me .mainbox .box2:hover{
+  transform: rotate(360deg);
+}
+.contact-me .mainbox .box2 .phone-icon{
+  font-size: 4rem;
+  text-align: center;
+}
+.contact-me .mainbox .box2 .call{
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: underline rgb(56, 11, 11);
+}
+.contact-me .mainbox .box2 .number{
+  font-size: 3rem;
+  text-align: center;
+}
+.contact-me .mainbox .box3{
+  width: 25%;
+  background-color: rgba(189, 178, 178, .486);
+  border-radius: 10%;
+  padding: 2rem;
+  cursor: pointer;
+  transform: rotate(-360deg);
+  transition: 1s;
+}
+.contact-me .mainbox .box3:hover{
+  transform: rotate(360deg);
+}
+.contact-me .mainbox .box3 .location-icon{
+  font-size: 4rem;
+  text-align: center;
+}
+.contact-me .mainbox .box3 .adress1{
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: underline rgb(56, 11, 11);
+}
+.contact-me .mainbox .box3 .adress2{
+  font-size: 2rem;
+  text-align: center;
+}
+.contact-me .mainbox .box4{
+  width: 25%;
+  background-color: rgba(189, 178, 178, .486);
+  border-radius: 10%;
+  padding: 2rem;
+  cursor: pointer;
+  transform: rotate(-360deg);
+  transition: 1s;
+}
+.contact-me .mainbox .box4:hover{
+  transform: rotate(360deg)
+}
+.contact-me .mainbox .box4 .mail-icon{
+  font-size: 4rem;
+  text-align: center;
+}
+.contact-me .mainbox .box4 .mail{
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: underline rgb(56, 11, 11);
+}
+.contact-me .mainbox .box4 .adress3{
+  font-size: 2rem;
+  text-align: center;
+}
+/* social menu */
+.social-menu{
+  background-image: url(./photo/young-smiling-african-man-standing-using-laptop.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background: cover;
+  height: 40vh;
+  width: 100%;
+
+}
+.social-menu .direction{
+  text-transform: uppercase;
+  font-size: 2em;
+  color: wheat;
+  text-shadow:2px 2px red;
+  transition: 1s;
+  cursor: pointer;
+}
+.social-menu .direction:hover{
+  color: brown;
+}
+
+.social-menu .bar ul li{
+  display: inline-block;
+  font-size: 6em;
+  padding: 7rem;
+  padding-top: 80px;
+}
+.social-menu .bar ul li a{
+  color: rgb(214, 212, 71);
+  transition: .7s ease-in-out;
+}
+.social-menu .bar ul li a:hover{
+  color: blue;
+}
+.social-menu .bar ul li a:active{
+  color: red;
+}
+/* footer */
+.footer{
+  background-color: rgb(61, 54, 54);
+  width: 100%;
+  height: 15vh;
+}
+.footer .gotop{
+  color: rgb(63, 51, 48);
+  background-color: #fff;
+  text-decoration: none;
+  border-radius: 15px;
+  float: right;
+  font-size: 20px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  top: 25px ;
+  right: 50px ;
+  transition: .7s;
+}
+.footer .gotop:hover{
+  background-color: cadetblue;
+  color: blueviolet;
+}
+.footer .copyright{
+  text-align: center;
+  justify-content: center;
+  font-size: 1.1em;
+  padding-top: 25px;
+  cursor: pointer;
+}
+/* the end */
